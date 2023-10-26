@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* ::before{
+            content: 'BEFORE';
+            color: red;
+        } */
+
+        /* ::after{
+            content:'AFTER';
+            background-color: deeppink;
+        } */
+
+        /* for the above syntaxes apply for all the body , html before 2 times ,after 2 times */
+
+        h1{
+            color: darkgreen;
+        }
+
+        /* for the above syntaxes apply for all the body , html before 2 times , after 2 times : to overcome this 
+            problem we have to use the syntax : selector::{} */
+
+        h1::before{
+            content: 'BEFORE';
+            color: maroon;
+        } 
+        
+        h1::first-letter{
+            font-size: 100px;
+            color: chartreuse;
+        }
+
+        h1::first-line{
+            color: violet;
+        }
+    </style>
+</head>
+<body>
+    <h1>WELCOME TO PSEUDO ELEMENTS</h1>
+</body>
+</html>

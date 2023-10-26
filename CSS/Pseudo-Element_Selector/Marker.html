@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ol li{
+            color: crimson;
+        }
+
+       ol li::marker{
+            color: purple;
+            font-size: 20px;
+        }
+
+        ul li{
+            color: chartreuse;
+        }
+
+        ul li::marker{
+            color: deeppink;
+            font-size: 25px;
+        }
+
+        ul li::selection{
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <h1>WELCOME TO PSEUDO ELEMENT MARKER</h1>
+    <ol style="font-size: 25px;">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVA SCRIPT</li>
+    </ol>
+
+    <ul style="list-style-type: square; font-size: 25px;" >
+        <li>PYTHON</li>
+        <li>JAVA</li>
+        <li>WEB TECHNOLOGIES</li>
+    </ul>
+</body>
+</html>

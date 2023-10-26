@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width:calc(100px*var(--a));
+            height:calc(100px*var(--a));
+            background-color: var(--b);
+            /* rotate:var(--c); */
+            rotate:calc(20deg*var(--c));
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div style="--a:1;--b:pink;--c:1">1 </div>
+        <div style="--a:2;--b:greenyellow;--c:2">2</div>
+        <div style="--a:3;--b:plum;--c:3">3</div>
+        <div style="--a:4;--b:yellow;--c:4">4</div>
+    </center>
+    
+</body>
+</html>

@@ -1,0 +1,11 @@
+h1{
+    background-color: aquamarine;
+    color: red;
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 1000px;
+    font-display: none;
+    font-variant: small-caps;
+    font-feature-settings: "aalt";
+    font-variant-ligatures: historical-ligatures;
+}

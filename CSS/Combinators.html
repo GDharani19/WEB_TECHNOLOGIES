@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator Selectors</title>
+    <style>
+        .a h1{
+            background-color: yellowgreen;
+            color:crimson
+            /* For Descendent Selector Use Parent Ele <space> Child Ele for all h1 tag is applied */
+        }
+
+        .b~h1{
+            background-color: deeppink;
+            color: black;
+
+            /* For General Selector Use Parent Ele ~ Child Ele 
+               It Is Used for .....
+               After the Child Ele Whatever Child Ele is There for them it is applicable */
+        }
+
+        .b+h1{
+            background-color: aquamarine;
+            color: pink;
+
+            /* Adjacent Selector is used Beside of Our Child Ele only it is applicable */
+        }
+
+        .b>h1{
+            background-color: deepskyblue;
+            color: blue;
+            /* Child selector is used for own childs of parent class only applicable like (blood relation with child) 
+                SYNTAX : class id>child ele */
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+        <h1>WELCOME HEADING 1</h1>
+        <div class="b">
+            <h1>WELCOME TO CHILD HEADING 1 </h1>
+            <p>
+                <h1>WELCOME TO SUB CHILD 1</h1>
+                <h1>WELCOME TO SUB CHILD 2</h1>
+            </p>
+        </div>
+        <h1>WELCOME TO HEADING 2</h1>
+        <p>WELCOME TO PARAGRAPH 1</p>
+        <h1>WELCOME TO HEADING 3</h1>
+    </div>
+</body>
+</html>
