@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flower{
+            width: 800px;
+            height: 800px;
+            background-color: aqua ;
+            position: relative;
+            left: 300px;
+            rotate: 0deg;
+        }
+
+        .common{
+            width: 200px;
+            height: 200px;
+            background-color: deeppink;
+            position: absolute;
+            left: 290px;
+            top: 200px;
+            margin: 10px;
+            rotate: -45deg;
+            border-radius: 200px 0px 200px 0px;
+            transition:all 10s;
+        }
+        
+        .flower:hover .child1{
+            rotate: -65deg;
+        }
+
+        .flower:hover .child2{
+            rotate: -25deg;
+        }
+
+        .flower:hover .child3{
+            rotate: -85deg;
+        }
+
+        .flower:hover .child4{
+            rotate: -5deg;
+        }
+
+        .flower:hover .child5{
+            rotate: -105deg;
+        }
+
+        .flower:hover .child6{
+            rotate: 15deg;
+        }
+
+        .flower:hover .child7{
+            rotate: -125deg;
+        }
+
+        .flower:hover .child8{
+            rotate: 35deg;
+        }
+
+        .leaf{
+            width: 300px;
+            height: 200px;
+            background-color: aqua;
+            position: absolute;
+            left: 255px;
+            top: 310px;
+            border-radius: 80px 80px 350px 350px ;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="flower">
+        <div class="common child1"></div>
+        <div class="common child2"></div>
+        <div class="common child3"></div>
+        <div class="common child4"></div>
+        <div class="common child5"></div>
+        <div class="common child6"></div>
+        <div class="common child7"></div>
+        <div class="common child8"></div>
+        <div class="common child9"></div>
+        <div class="leaf"></div>
+    </div>
+</body>
+</html>
