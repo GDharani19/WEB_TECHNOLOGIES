@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .div1{
+            width: 300px;
+            height: 300px;
+            /* background-color: gold; */
+            background-image:url(https://media.tenor.com/BYm7fPBRznkAAAAC/diwali-happy-diwali.gif) ;
+            background-size: cover;
+            animation-name: color;
+            animation-duration: 20s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            position: relative;
+        }
+
+        @keyframes color {
+
+            /* from{
+                background-color: gold;
+            }
+
+            to{
+                background-color: goldenrod;
+            } */
+
+            0%{
+                /* background-color: orange; */
+                background-image: url(https://media0.giphy.com/media/wyyqRSqoWGSiP66G6a/giphy.gif);
+                background-size: cover;
+                left: 0px;
+                top: 0px;
+            }
+
+            25%{
+                background-image: url(https://i.pinimg.com/originals/e0/fb/c0/e0fbc0a0da5b474a66263dd4142f7db5.gif);
+                background-size: cover;
+                left: 300px;
+                top: 0px;
+                border-radius: 20%;
+            }
+
+            50%{
+                background-image: url(https://static.tumblr.com/e47a9c5fea6ab4f25031ca6718044d94/pzbtxwr/C47oy03o2/tumblr_static_8esthtt9su4gs8wsocckgk4so_2048_v2.gif);
+                background-size: cover;
+                left: 300px;
+                top: 300px;
+                border-radius: 40%;
+            }
+
+            75%{
+                background-image: url(https://media.tenor.com/tcKh4rTSiwMAAAAC/angkukueh-girl-angkukueh-girl-and-friends.gif);
+                background-size: cover;
+                left: 0px;
+                top: 300px;
+                border-radius: 60;
+            }
+
+            100%{
+                background-image: url(https://i.pinimg.com/originals/a1/0c/1e/a10c1e6883f907aed7f78ac11fd3b906.gif);
+                background-size: cover;
+                left: 0px;
+                top: 0px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="div1"></div>
+</body>
+</html>

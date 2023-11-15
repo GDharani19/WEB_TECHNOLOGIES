@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            font-size: 20px;
+            text-align: center;
+            animation: speed 10s 0s infinite alternate;
+            position: relative;
+        }
+
+        @keyframes speed {
+            from{
+                left: 0px;
+            }
+
+            to{
+                left: 600px;
+            }
+        }
+
+        .child1{
+            background-color: chartreuse;
+            animation-timing-function: ease;
+        }
+
+        .child2{
+            background-color: deeppink;
+            animation-timing-function: ease-in;
+        }
+
+        .child3{
+            background-color: blue;
+            animation-timing-function: ease-out;
+        }
+
+        .child4{
+            background-color: palegreen;
+            animation-timing-function: ease-in-out;
+        }
+
+        .child5{
+            background-color: maroon;
+            animation-timing-function: linear;
+        }
+    </style>
+</head>
+<body>
+    <div class="child1">EASE</div>
+    <div class="child2">EASE-IN</div>
+    <div class="child3">EASE-OUT</div>
+    <div class="child4">EASE-IN-OUT</div>
+    <div class="child5">LINEAR</div>
+</body>
+</html>

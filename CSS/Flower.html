@@ -8,10 +8,11 @@
         .flower{
             width: 800px;
             height: 800px;
-            background-color: white ;
+            /* background-color: white ; */
             position: relative;
             left: 300px;
             rotate: 0deg;
+            animation: color infinite normal;
         }
 
         .common{
@@ -27,7 +28,9 @@
             transition:all 10s;
         }
 
-        /* @keyframes flower{
+    
+
+        @keyframes color{
         from{
             background-color: red;
         }
@@ -35,7 +38,7 @@
         to{
             background-color: yellow;
         }
-    } */
+    }
         
         .flower:hover .child1{
             rotate: -65deg;

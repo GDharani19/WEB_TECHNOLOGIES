@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url(https://bestanimations.com/media/fireworks/671801409ba-awesome-coloful-fireworks-animated-gif-image-3.gif);
+            background-size: cover;
+            flex-direction: column;
+
+        }
+
+        div{
+            color: transparent;
+            font-size: 8vw;
+            font-style: italic;
+        }
+
+        div span{
+            animation: diwali 10s 1s infinite linear;
+        }
+
+        @keyframes diwali {
+            0%{
+                color: white;
+                filter: blur(2px) hue-rotate(0deg);
+                text-shadow: 0px 0px 10px gold,
+                0px 0px 40px red,
+                0px 0px 80px chartreuse,
+                0px 0px 120px blue,
+                0px 0px 160px deeppink,
+                0px 0px 200px yellow,
+                0px 0px 240px maroon;
+                -webkit-text-stroke:2px deeppink;
+            }
+
+            100%{
+                color: white;
+                filter: blur(2px) hue-rotate(2000deg);
+                text-shadow: 0px 0px 10px gold,
+                0px 0px 40px red,
+                0px 0px 80px chartreuse,
+                0px 0px 120px blue,
+                0px 0px 160px deeppink,
+                0px 0px 200px yellow,
+                0px 0px 240px maroon;
+                -webkit-text-stroke:2px deeppink;
+            }
+        }
+
+        audio{
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span>H</span>
+        <span>A</span>
+        <span>P</span>
+        <span>P</span>
+        <span>Y</span>
+        <span style="margin-left: 10vh;">D</span>
+        <span>I</span>
+        <span>W</span>
+        <span>A</span>
+        <span>L</span>
+        <span>I</span>
+    </div>
+
+    <audio src="/MEDIA/AUDIOS/firework-show-short-64657.mp3" controls></audio>
+</body>
+</html>
+
+
+<!-- https://i.pinimg.com/originals/7d/84/ca/7d84ca15ff75249445d430f36fbb71de.gif -->
