@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sublist1 ul li{
+            display: inline-flex; 
+            margin: 30px;
+        }
+
+        .sub1 ul li{
+            display: none;
+        }
+
+        .sublist1 ul li:hover .sub1 ul li{
+            display: block;
+            background-color: red;
+            margin-left: -100px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="sublist1" style="background-color: palegreen; width: 200px;">
+            <ul>
+                <li>Topwear
+                    <div class="sub1">
+                        <ul>
+                            <li>T-Shirts</li>
+                            <li>Casual shirts</li>
+                            <li>Formal Shirts</li>
+                            <li>Sweatshirts</li>
+                            <li>Sweaters</li>
+                            <li>Jackets</li>
+                            <li>Blazers&Coats</li>
+                            <li>Suits</li>
+                            <li>Rain Jckets</li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </li>
+
+
+                <!-- <li>Bottomwear</li>
+                <li>Footwear</li>
+                <li>Sports&Activewear</li>
+                <li>Fashion Accessories</li> -->
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

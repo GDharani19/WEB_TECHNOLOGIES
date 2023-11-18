@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .parent{
+            width: auto;
+            background-color: palegreen;
+            height: fit-content;
+        
+        }
+        
+        .parent ul li{
+            display: inline-flex;
+            /* margin-left: 50px;
+            margin-top: 20px; */
+            padding-top: 20px;
+            padding-bottom: 20px;
+            
+        }
+
+        .parent ul li{
+            display: flex;
+            justify-content: center;
+        }
+
+        /* a{
+            text-decoration: none;
+            font-weight:bold ;
+            color: black;
+        }
+
+        div{
+            background-color: red;
+            width: 1200px;
+            height: 500px;
+            margin-top: 40px;
+            margin-left: 0px;
+        }
+
+        .div1{
+            background-color: palegreen;
+            width: 220px;
+            height: 450px;
+            float: left;
+            margin-left: 20px;
+        }
+
+
+        td:hover{
+            font-weight: bold;
+        }
+
+        .parent ul li .div1 tr td{
+            margin: 0px;
+            display: none;
+        }
+
+        .parent ul li:hover .div1 tr td{
+            display: block; 
+        }
+
+        li{
+            position: absolute;
+            margin-left: -20px;
+        }
+
+        .back{
+            background-color: white;
+            height: 400px;
+            margin-left: -140px;
+        }
+
+        .back:hover{
+            background-color: rgb(175, 214, 229);
+            border: solid 1px blue;
+            border-radius: 10px;
+        } */
+
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <ul>
+            <li><a href="#">MEN</a></li>
+            <li><a href="#">WOMEN</a></li>
+            <li><a href="#">KIDS</a></li>
+            <li><a href="#">HOME&LIVING</a></li>
+            <li><a href="#">BEAUTY</a></li>
+        </ul>
+    </div>
+
+                <!-- <div class="back">
+                    <div class="div1">
+                        <table>
+                            <tr>
+                                <td><b style="color: rgb(240, 39, 79);">Topwear</b></td>
+                                <td>&nbsp;</td>
+                                <td>T-Shirts</td>
+                                <td>Casual shirts</td>
+                                <td>Formal Shirts</td>
+                                <td>Sweatshirts</td>
+                                <td>Sweaters</td>
+                                <td>Jackets</td>
+                                <td>Blazers&Coats</td>
+                                <td>Suits</td>
+                                <td>Rain Jackets</td>
+                            </tr>
+            
+                            <tr>
+                                <td><hr></td>
+                            </tr>
+            
+                            <tr>
+                                <td><b style="color: rgb(240, 39, 79);">Indian&FestiveWear</b></td>
+                                <td>&nbsp;</td>
+                                <td>Kurtas & Kurta Sets</td>
+                                <td>Sherwanis</td>
+                                <td>Nehru Jackets</td>
+                                <td>Dhotis</td>
+                            </tr>
+                        </table>
+                    </div>
+            
+                    <div class="div1">
+                        <table>
+                            <tr>
+                                <td><b style="color: rgb(240, 39, 79);">Bottom Wear</b></td>
+                                <td>&nbsp;</td>
+                                <td>Jeans</td>
+                                <td>Casual Trousers</td>
+                                <td>Formal Trousers</td>
+                                <td>Shorts</td>
+                                <td>Track Pants & Joggers</td>
+                            </tr>
+            
+                            <tr>
+                                <td><hr></td>
+                            </tr>
+            
+                            <tr>
+                                <td><b style="color: rgb(240, 39, 79);">InnerWear & Sleepwear</b></td>
+                                <td>&nbsp;</td>
+                                <td>Briefs & Trunks</td>
+                                <td>Boxers</td>
+                                <td>Vests</td>
+                                <td>Sleepwear & Loungewear</td>
+                                <td>Thermals</td>
+                            </tr>
+            
+                            <tr>
+                                <td><hr></td>
+                            </tr>
+            
+                            <tr>
+                                <td><b>Plus Size</b></td>
+                            </tr>
+            
+            
+                        </table>
+                    </div>
+            
+                    <div class="div1">
+                        <table>
+                            <tr>
+                                <td><b style="color: rgb(240, 39, 79);">Foot Wear</b></td>
+                                <td>&nbsp;</td>
+                                <td>Casual Shoes</td>
+                                <td>Sport Shoes</td>
+                                <td>Formal Shoes</td>
+                                <td>Sneakers</td>
+                                <td>Sandals & Floaters</td>
+                                <td>Flip Flops</td>
+                                <td>Socks</td>
+                            </tr>
+            
+                            <tr>
+                                <td><hr></td>
+                            </tr>
+            
+                            <tr>
+                                <td><b style="color: rgb(240, 39, 79);">Personal Care & Grooming</b></td>
+                            </tr>
+            
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+            
+                            <tr>
+                                <td><b style="color: rgb(240, 39, 79);">Sunglasses & Frames</b></td>
+                            </tr>
+            
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+            
+                            <tr>
+                                <td><b style="color: rgb(240, 39, 79);">Watches</b></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="div1">
+                        <table>
+                            <tr>
+                                <td><b >Sports & Active Wear</b></td>
+                                <td>&nbsp;</td>
+                                <td>Jeans</td>
+                                <td>Casual Trousers</td>
+                                <td>Formal Trousers</td>
+                                <td>Shorts</td>
+                                <td>Track Pants & Joggers</td>
+                            </tr>
+            
+                            <tr>
+                                <td><hr></td>
+                            </tr>
+            
+                            <tr>
+                                <td><b>InnerWear & Sleepwear</b></td>
+                                <td>&nbsp;</td>
+                                <td>Briefs & Trunks</td>
+                                <td>Boxers</td>
+                                <td>Vests</td>
+                                <td>Sleepwear & Loungewear</td>
+                                <td>Thermals</td>
+                            </tr>
+            
+                            <tr>
+                                <td><hr></td>
+                            </tr>
+            
+                            <tr>
+                                <td><b>Plus Size</b></td>
+                            </tr>
+            
+            
+                        </table>
+                    </div>
+
+                    <div class="div1">
+                        <table>
+                            <tr>
+                                <td><b>Fashion Accessories</b></td>
+                                <td>&nbsp;</td>
+                                <td>Jeans</td>
+                                <td>Casual Trousers</td>
+                                <td>Formal Trousers</td>
+                                <td>Shorts</td>
+                                <td>Track Pants & Joggers</td>
+                            </tr>
+            
+                            <tr>
+                                <td><hr></td>
+                            </tr>
+            
+                            <tr>
+                                <td><b>InnerWear & Sleepwear</b></td>
+                                <td>&nbsp;</td>
+                                <td>Briefs & Trunks</td>
+                                <td>Boxers</td>
+                                <td>Vests</td>
+                                <td>Sleepwear & Loungewear</td>
+                                <td>Thermals</td>
+                            </tr>
+            
+                            <tr>
+                                <td><hr></td>
+                            </tr>
+            
+                            <tr>
+                                <td><b>Plus Size</b></td>
+                            </tr>
+            
+            
+                        </table>
+                    </div>
+                </div>
+            </li> -->
+            <!-- <li><a href="#" style="margin-left: 200px;">WOMEN</a> -->
+                <!-- <div>
+                    <div class="div2">
+                        <table>
+                            <tr>
+                                <td><b>Indian & Fusion wear</b></td>
+                                <td>&nbsp;</td>
+                                <td>T-Shirts</td>
+                                <td>Casual shirts</td>
+                                <td>Formal Shirts</td>
+                                <td>Sweatshirts</td>
+                                <td>Sweaters</td>
+                                <td>Jackets</td>
+                                <td>Blazers&Coats</td>
+                                <td>Suits</td>
+                                <td>Rain Jackets</td>
+                            </tr>
+            
+                            <tr>
+                                <td><hr></td>
+                            </tr>
+            
+                            <tr>
+                                <td><b>Indian&FestiveWear</b></td>
+                                <td>&nbsp;</td>
+                                <td>Kurtas & Kurta Sets</td>
+                                <td>Sherwanis</td>
+                                <td>Nehru Jackets</td>
+                                <td>Dhotis</td>
+                            </tr>
+                        </table>
+                    </div>
+            
+                    <div class="div2">
+                        <table>
+                            <tr>
+                                <td><b>Bottom Wear</b></td>
+                                <td>&nbsp;</td>
+                                <td>Jeans</td>
+                                <td>Casual Trousers</td>
+                                <td>Formal Trousers</td>
+                                <td>Shorts</td>
+                                <td>Track Pants & Joggers</td>
+                            </tr>
+            
+                            <tr>
+                                <td><hr></td>
+                            </tr>
+            
+                            <tr>
+                                <td><b>InnerWear & Sleepwear</b></td>
+                                <td>&nbsp;</td>
+                                <td>Briefs & Trunks</td>
+                                <td>Boxers</td>
+                                <td>Vests</td>
+                                <td>Sleepwear & Loungewear</td>
+                                <td>Thermals</td>
+                            </tr>
+            
+                            <tr>
+                                <td><hr></td>
+                            </tr>
+            
+                            <tr>
+                                <td><b>Plus Size</b></td>
+                            </tr>
+            
+            
+                        </table>
+                    </div>
+            
+                    <div class="div2">
+                        <table>
+                            <tr>
+                                <td><b>Foot Wear</b></td>
+                                <td>&nbsp;</td>
+                                <td>Casual Shoes</td>
+                                <td>Sport Shoes</td>
+                                <td>Formal Shoes</td>
+                                <td>Sneakers</td>
+                                <td>Sandals & Floaters</td>
+                                <td>Flip Flops</td>
+                                <td>Socks</td>
+                            </tr>
+            
+                            <tr>
+                                <td><hr></td>
+                            </tr>
+            
+                            <tr>
+                                <td><b>Personal Care & Grooming</b></td>
+                            </tr>
+            
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+            
+                            <tr>
+                                <td><b>Sunglasses & Frames</b></td>
+                            </tr>
+            
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+            
+                            <tr>
+                                <td><b>Watches</b></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="div2">
+                        <table>
+                            <tr>
+                                <td><b>Sports & Active Wear</b></td>
+                                <td>&nbsp;</td>
+                                <td>Jeans</td>
+                                <td>Casual Trousers</td>
+                                <td>Formal Trousers</td>
+                                <td>Shorts</td>
+                                <td>Track Pants & Joggers</td>
+                            </tr>
+            
+                            <tr>
+                                <td><hr></td>
+                            </tr>
+            
+                            <tr>
+                                <td><b>InnerWear & Sleepwear</b></td>
+                                <td>&nbsp;</td>
+                                <td>Briefs & Trunks</td>
+                                <td>Boxers</td>
+                                <td>Vests</td>
+                                <td>Sleepwear & Loungewear</td>
+                                <td>Thermals</td>
+                            </tr>
+            
+                            <tr>
+                                <td><hr></td>
+                            </tr>
+            
+                            <tr>
+                                <td><b>Plus Size</b></td>
+                            </tr>
+            
+            
+                        </table>
+                    </div>
+
+                    <div class="div2">
+                        <table>
+                            <tr>
+                                <td><b>Fashion Accessories</b></td>
+                                <td>&nbsp;</td>
+                                <td>Jeans</td>
+                                <td>Casual Trousers</td>
+                                <td>Formal Trousers</td>
+                                <td>Shorts</td>
+                                <td>Track Pants & Joggers</td>
+                            </tr>
+            
+                            <tr>
+                                <td><hr></td>
+                            </tr>
+            
+                            <tr>
+                                <td><b>InnerWear & Sleepwear</b></td>
+                                <td>&nbsp;</td>
+                                <td>Briefs & Trunks</td>
+                                <td>Boxers</td>
+                                <td>Vests</td>
+                                <td>Sleepwear & Loungewear</td>
+                                <td>Thermals</td>
+                            </tr>
+            
+                            <tr>
+                                <td><hr></td>
+                            </tr>
+            
+                            <tr>
+                                <td><b>Plus Size</b></td>
+                            </tr>
+            
+            
+                        </table>
+                    </div>
+                </div> -->
+            
+            <!-- <li><a href="#" style="margin-left: 350px;">KIDS</a></li>
+            <li><a href="#" style="margin-left: 550px;">HOME&LIVING</a></li>
+            <li><a href="#" style="margin-left: 800px;">BEAUTY</a></li>
+        </ul>
+    </div> -->
+</body>
+</html>
+
+
+<!-- <li><a href="#" style="margin-left: -2200px;">WOMEN</a></li>
+            <li><a href="#" style="margin-left: -1900px;">KIDS</a></li>
+            <li><a href="#" style="margin-left: 950px;">HOME&LIVING</a></li>
+            <li><a href="#" style="margin-left: -250px;">BEAUTY</a></li> -->

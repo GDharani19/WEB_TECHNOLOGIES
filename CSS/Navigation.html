@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .horizontalnav{
+            width: auto;
+            height: fit-content;
+            background-color: chartreuse;
+        }
+
+        .horizontalnav ul li{
+            display: inline-flex;
+            margin: 30px;
+            font-size: 20px;
+            margin-left: 10px;
+            
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover{
+            color: red;
+        }
+
+        .sublist{
+            display: none;
+            width: 120px;
+            font-size: 5px;
+        }
+
+        .horizontalnav ul li:hover .sublist{
+            display: block;
+            background-color: deeppink;
+            position: absolute;
+            margin-top: 53px;
+            margin-left: -25px;
+        }
+
+        .horizontalnav ul li:hover .sublist ul li{
+            display: block;
+        }
+
+        .a1:hover{
+            color: white;
+            background-color: maroon;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <!-- <nav></nav> -->
+    <div class="horizontalnav">
+        <ul>
+            <li><a href="#" style="color: red;">HOME</a></li>
+            <li><a href="#">PYTHON</a>
+                <div class="sublist">
+                    <ul>
+                        <li><a href="#" class="a1">Variables</a></li>
+                        <li><a href="#" class="a1">Keywords</a></li>
+                        <li><a href="#" class="a1">Arrays</a></li>
+                        <li><a href="#" class="a1">OOPS</a></li>
+                        <li><a href="#" class="a1">Loops</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#" style="margin-left: 20px;">SQL</a>
+            <div class="sublist">
+                <ul>
+                    <li><a href="#">queries</a></li>
+                    <li><a href="#">joins</a></li>
+                    <li><a href="#">statements</a></li>
+                    <li><a href="#">sub queries</a></li>
+                </ul>
+            </div></li>
+            <li><a href="#">WEB TECHNOLOGIES</a>
+            <div class="sublist">
+                <ul>
+                    <li><a href="#">html</a></li>
+                    <li><a href="#">css</a></li>
+                    <li><a href="#">java script</a></li>
+                </ul>
+            </div></li>
+            <li><a href="#">JAVA</a></li>
+            <li><a href="#">REACT JS</a></li>
+        </ul>
+    </div>
+</body>
+</html>
