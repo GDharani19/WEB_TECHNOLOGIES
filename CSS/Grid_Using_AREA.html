@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid_Using_AREA</title>
+
+    <style>
+        body{
+            width: 100%;
+            border: solid black 4px;
+            /* height: 100vh; */
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto auto;
+            grid-template-areas: "header header header" 
+            "aside main1 main2" "aside section section" "footer footer footer";
+        }
+
+        header{
+            grid-area: header;
+            background-color: chartreuse;
+        }
+
+        aside{
+            grid-area: aside;
+            background-color: deeppink;
+        }
+
+        .main1{
+            grid-area: main1;
+            background-color: yellow;
+        }
+
+        .main2{
+            grid-area: main2;
+            background-color: blue;
+        }
+
+        section{
+            grid-area: section;
+            background-color: orangered;
+        }
+
+        footer{
+            grid-area: footer;
+            background-color: green;
+        }
+
+        .a{
+            text-align: center;
+            font-size: 40px;
+            padding: 55px;
+        }
+    </style>
+</head>
+<body>
+    <header class="a">HEADER</header>
+    <aside class="a">ASIDE</aside>
+    <main class="main1 a">MAIN1</main>
+    <main class="main2 a">MAIN2</main>
+    <section class="a">SECTION</section>
+    <footer class="a">FOOTER</footer>
+</body>
+</html>

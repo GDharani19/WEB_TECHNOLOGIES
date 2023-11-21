@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid_Using_Starting Number and Ending Number</title>
+
+    <style>
+        body{
+            width: 100%;
+            display: grid;
+            grid-template-rows: auto auto auto auto auto auto;
+            grid-template-columns: auto auto auto auto;
+            /* gap: 10px; */
+            row-gap: 15px;
+            column-gap: 30px;
+        }
+
+        header{
+            background-color: purple;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+
+        aside{
+            background-color: plum;
+            grid-row-start: 1;
+            grid-row-end: 5;
+        }
+
+        section{
+            background-color: palegreen;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+
+        .main1{
+            background-color: palevioletred;
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+
+        nav{
+            background-color: goldenrod;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+
+        .main2{
+            background-color: crimson;
+            /* grid-column-start: 2;
+            grid-column-end: 4; */
+            grid-column: 2/4;
+        }
+
+        footer{
+            background-color: aquamarine;
+            /* grid-column-start: 1;
+            grid-column-end: 4; */
+            grid-column: 1/4;
+        }
+
+        .a{
+            text-align: center;
+            font-size: 40px;
+            /* padding: 60px; */
+            padding-left: 149px;
+            padding-right: 149px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            border: solid 2px black;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="a">HEADER</header>
+    <aside class="a">ASIDE</aside>
+    <section class="a">SECTION</section>
+    <main class="main1 a">MAIN1</main>
+    <nav class="a">NAVIGATION</nav>
+    <main class="main2 a">MAIN2</main>
+    <footer class="a">FOOTER</footer>
+</body>
+</html>

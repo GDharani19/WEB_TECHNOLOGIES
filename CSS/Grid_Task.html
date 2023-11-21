@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: auto auto auto auto;
+        }
+
+        header{
+            background-color: pink;
+            grid-column: 2/3;
+        }
+
+        .sec1{
+            background-color: palegreen;
+            grid-column: 3/4;
+        }
+
+        .main1{
+            background-color: aqua;
+            grid-column: 2/4;
+        }
+
+        .main2{
+            background-color: aqua;
+            grid-column: 2/3;
+        }
+
+
+        .main3{
+            background-color: aqua;
+            grid-column: 2/3;
+        }
+
+        .main4{
+            background-color: peru;
+            grid-column: 3/4;
+
+        }
+
+        .main5{
+            background-color: red;
+            grid-column: 2/3;
+        }
+
+        aside{
+            background-color: yellow;
+            grid-row: 1/4;
+        }
+
+        /* .sec2{
+            background-color: magenta;
+            grid-row: 2/4;
+        } */
+    </style>
+</head>
+<body>
+    <header>HEADER</header>
+    <section class="sec1">SECTION1</section>
+    <main class="main1">MAIN1</main>
+    <aside>ASIDE</aside>
+    <main class="main2">MAIN2</main>
+    <main class="main3">MAIN3</main>
+    <main class="main4">MAIN4</main>
+    <main class="main5">MAIN5</main>
+    <section class="sec2">SECTION2</section>
+
+</body>
+</html>

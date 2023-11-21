@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <style>
+        .slider{
+            overflow: hidden;
+        }
+
+        .slider header{
+            width: 400%;
+            height: 400px;
+            animation: scroll1 10s infinite;
+            position: relative;
+        }
+
+        .slider header img{
+            height: 400px;
+            width: 25%;
+            float: left;
+        }
+
+        @keyframes scroll1 {
+            0%{
+                left: 0%;
+            }
+            25%{
+                left: -100%;
+            }
+            50%{
+                left: -200%;
+            }
+            75%{
+                left: -300px;
+            }
+
+            100%{
+                left: 0%;
+            }
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <header>
+            <img src="https://fdstatic.foodfood.com/odd/images/uhea3hBake-Diaries.jpg" alt="">
+            <img src="https://fdstatic.foodfood.com/odd/images/30BbbTFoodFood-Chefs.jpg" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWje_gjVcmi-wks5nTRnW_xv5W2l3MVnk7W1QDcZuhNg&s" alt="">
+            <img src="https://www.foodfood.com/images/banner/Cook-Smart_D.png" alt="">
+        </header>
+    </div>
+</body>
+</html>

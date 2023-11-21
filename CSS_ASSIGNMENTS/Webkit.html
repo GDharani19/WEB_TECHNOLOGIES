@@ -5,15 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webkit_Properties</title>
     <style>
-        .parent::-webkit-scrollbar{
-            width: 2vh;
+
+        /* *{
+            margin: 0;
+            padding: 0;
+            
+        } */
+
+        .parent{
+            background-color: deeppink;
+            width: 100vw;
+            height: 50vh;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 30px;
+            overflow: scroll;
+            
         }
+
+        .child{
+            flex-grow: 1;
+            flex-shrink: 0;
+            height: 100%;
+            width: 500px;
+            background-color: chartreuse;
+            /* gap: 20px; */
+        }
+
+        .parent::-webkit-scrollbar{
+            width: 3vh;
+            height: 3vh;
+        } 
 
         .parent::-webkit-scrollbar-thumb{
             background-image: linear-gradient(to bottom,red,green);
             border-radius: 30px;
             border: 1px solid deeppink;
-        }
+        } 
 
         .parent::-webkit-scrollbar-track{
             background-color: plum;
@@ -22,6 +52,14 @@
     </style>
 </head>
 <body>
-    <div class="parent"></div>
+    <div class="parent">
+        <div class="child"></div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               </div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
 </body>
 </html>
