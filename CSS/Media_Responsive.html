@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Responsive</title>
+    <style>
+        header{
+            height: 100px;
+            background-color: deepskyblue;
+        }
+
+        .parent{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .leftparent{
+            height: 200px;
+            background-color: orange;
+            margin-top: 10px;
+        }
+
+        .leftchild{
+            background-color: white;
+            height: 30px;
+            margin: 15px;
+        }
+
+        .mainparent{
+            background-color: white;
+            height: 600px;
+        }
+
+        .mainchild{
+            background-color: whitesmoke;
+            height: 100px;
+            margin-top: 10px;
+        }
+
+        .rightbar{
+            background-color: palegreen;
+            height: 120px;
+            margin-top: 10px;
+        }
+
+        .parent{
+            flex-direction: row;
+        }
+
+        .leftparent{
+            width: 20%;
+            height: 540px;
+        }
+
+        .mainparent{
+            width: 60%;
+            margin-left: 5px;
+        }
+
+        .rightbar{
+            width: 20%;
+            height: 540px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header></header>
+    <div class="parent">
+        <div class="leftparent">
+            <div class="leftchild"></div>
+            <div class="leftchild"></div>
+            <div class="leftchild"></div>
+            <div class="leftchild"></div>
+        </div>
+
+        <div class="mainparent">
+            <div class="mainchild"></div>
+            <div class="mainchild"></div>
+            <div class="mainchild"></div>
+            <div class="mainchild"></div>
+            <div class="mainchild"></div>
+        </div>
+
+        <div class="rightbar"></div>
+    </div>
+</body>
+</html>

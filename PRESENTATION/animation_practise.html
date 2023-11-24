@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: deeppink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 500px;
+            font-size: 100px;
+            animation: h1 10s linear infinite;
+            text-shadow: 0px 0px 30px black;
+           /* filter: drop-shadow(30px 10px 4px rgb(100,236,136)); */
+            
+        }
+
+        @keyframes h1 {
+            0%{
+                color: chartreuse;
+                filter: blur(1px) hue-rotate(0deg);
+            }
+
+            20%{
+                color: maroon;
+                filter: blur(1px) hue-rotate(500deg)
+            }
+
+            40%{
+                color: aqua;
+                filter: blur(1px) hue-rotate(1000deg)
+            }
+
+            60%{
+                color: red;
+                filter: blur(1px) hue-rotate(1500deg)
+            }
+
+            80%{
+                color: yellow;
+                filter: blur(1px) hue-rotate(2000deg)
+            }
+
+            100%{
+                color: orange;
+                filter: blur(2px) hue-rotate(2500deg)
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>DHARANI</h1>
+    </div>
+</body>
+</html>

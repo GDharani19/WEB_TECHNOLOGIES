@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: chartreuse;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        h1{
+            color: chartreuse;
+            background-color: maroon;
+            font-size: 1em; 
+        }
+
+        .a{
+
+            width: 25vw;
+            height: 25vh;
+            background-color: blue;
+            
+        }
+
+        /* @media screen and (min-width:600px) {
+            body{
+                background-color: deeppink;
+                flex-direction: row;
+            }
+
+            h1{
+                color: deeppink;
+                background-color: yellow;
+                padding: 10px;
+                font-size: 2em;
+            }
+
+            .a{
+                width: 20vw;
+                height: 20vw;
+                background-color: red;
+            }
+
+        } */
+
+        @media screen and (max-width:600px) {
+            body{
+                background-color: deeppink;
+                flex-direction: row;
+            }
+
+            h1{
+                color: deeppink;
+                background-color: yellow;
+                padding: 10px;
+                font-size: 2em;
+            }
+
+            .a{
+                width: 20vw;
+                height: 20vw;
+                background-color: red;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <h1>WELCOME TO MEDIA TAG</h1>
+    <div class="a"></div>
+</body>
+</html>

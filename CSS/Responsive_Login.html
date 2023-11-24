@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-image: url(https://www.imageshine.in/uploads/gallery/Pink-Color-Background-images-free-download.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 100vh;
+        }
+
+        .header{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 2%;
+            background-color: rgba(0, 0, 0, 0.123);
+            backdrop-filter: blur(25px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo{
+            font-size: 2rem;
+            color: rgb(245, 241, 241);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .navbar a{
+            font-size: 1.3rem;
+            color: rgb(248, 244, 244);
+            text-decoration: none;
+            /* font-weight: bold; */
+            margin-left: 2.5rem;
+        }
+
+        #check{
+            display: none;
+        }
+
+        .icons{
+            right: 5%;
+            position: absolute;
+            font-size: 1.5rem;
+            color: white;
+            cursor: pointer;
+            display: none;
+        }
+
+        @media screen and (max-width:992px){
+            .header{
+                padding: 1.3rem 5%;
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            .icons{
+                display: inline-flex;
+            }
+
+            #check:checked~.icons #menu-icon{
+                display: none;
+            }
+
+            .icons #close-icon{
+                display: none;
+            }
+
+            #check:checked~.icons #close-icon{
+                display: block;
+            }
+
+            .navbar{
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                height: 0;
+                background: rgba(0, 0, 0, 0.123);
+                backdrop-filter: blur(60px);
+                transition: .3s ease;
+                overflow: hidden;
+            }
+
+            #check:checked~.navbar{
+                height: 18rem;
+            }
+
+            .navbar a{
+                display: block;
+                font-size: 1.1rem;
+                margin: 1.5rem;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Logo</a>
+        <input type="checkbox" name="" id="check">
+        <label for="check" class="icons">
+            <i class="fa fa-bars" id="menu-icon"></i>
+            <i class="fa-solid fa-x" id="close-icon"></i>
+        </label>
+
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Services</a>
+            <a href="#">Login</a>
+        </nav>
+    </header>
+</body>
+</html>

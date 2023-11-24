@@ -4,8 +4,290 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+
+        *{
+            left: 0;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 80%;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto auto auto auto auto;
+            grid-template-areas: "header header header" 
+            "nav1 nav1 nav1"
+            "aside1 main main"
+            "aside1 sec1 aside2"
+            "aside1 sec2 aside2"
+            "nav2 nav2 nav2"
+            "footer footer footer";
+            box-sizing: border-box;
+            gap: 10px;
+        }
+
+        header{
+
+            grid-area: header;
+            /* background-color: chartreuse; */
+        }
+
+        .nav1{
+            grid-area: nav1;
+            /* background-color: deeppink; */
+        }
+
+        .aside1{
+            grid-area: aside1;
+            /* background-color: chocolate; */
+        }
+
+        .aside2{
+            grid-area: aside2;
+            box-sizing: border-box;
+            /* background-color: chocolate;  */
+            /* padding-bottom: 100px; */
+        }
+
+        main{
+            grid-area: main;
+            /* background-color: yellow; */
+        }
+
+        .sec1{
+            grid-area: sec1;
+            /* background-color: maroon; */
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
+        .nav2{
+            grid-area: nav2;
+            /* background-color: crimson; */
+        }
+
+        footer{
+            grid-area: footer;
+            background-color: deepskyblue;
+        }
+
+        .b{
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+
+        .b{
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .b::first-letter{
+            font-size: 60px;
+        }
+
+        .a{
+            padding-left: 20px;
+
+        }
+
+        .n{
+            font-size: 40px;
+            letter-spacing: 2px;
+        }
+
+        .photo{
+            width: 300px;
+            height: 200px;
+        }
+
+        .photo1{
+            width: 1000px;
+            height: 400px;
+        }
+        
+
+        .sec2{
+            /* background-color: crimson; */
+        }
+
+    </style>
 </head>
 <body>
-    
+    <header class="a b">
+        <div><img src="https://economictimes.indiatimes.com/photo/msid-74451948,quality-100/et-logo.jpg" alt=""></div>
+        <hr>
+        <hr>
+    </header>
+    <nav class="nav1 a">
+        <div class="n"><span style="font-size: 80px;">N</span>arayana Murthy moots sops to fuel domestic capital to startups</div>
+    </nav>
+    <aside class="aside1 a gap">
+        <div style="text-align: justify;"><span style="font-size: 40px; color: red; text-decoration: underline;">Synopsis</span> <br><br>
+            In an interview with ET, the Infosys founder hailed the Modi government for drafting the National Education Policy (NEP), and said tech firms should use the current downturn to
+             innovate and expand their market share to emerge winners when the market is up.
+            Infosys founder NR Narayana Murthy suggested incentives for private and public funds to set aside a portion of their capital for boosting domestic
+             investment in Indian startups in an interview with ET. The Infosys founder also hailed the Narendra Modi government for drafting the National Education Policy (NEP).
+              On the sidelines of the Infosys Prize announcement, Murthy said tech firms should use the current downturn to innovate and expand their market share to emerge winners when the market.
+              It has been a very positive experiment. The number of winners is now sizable at around 90 winners now. A few of them have gone on to win bigger prizes. However, our desire is that we should see a few Fields Medal winners and Nobel laureates who have worked in India. Looking around, I believe that will happen as we move forward.
+        </div>
+
+        <div><img class="photo1" src="https://thumbs.dreamstime.com/b/phone-has-business-graph-icon-press-enter-button-computer-logistics-communication-network-world-map-send-message-connect-137086959.jpg" alt="">
+            <div style=" width: 1000px; height: 200px; float: left;">
+                <div style=" width: 500px; height: 150px; float: left; text-align: justify; margin: 10px;">
+                    <h2>Elon Musk, in a tweet, said that OpenAI should go public with the reason behind firing Sam Altman.</h2> The billionaire says that there is a "bombshell variable" the public knows nothing about.
+                    It has been quite a dramatic turn of events at OpenAI in the last couple of days. Sam Altman, co-founder of OpenAI, was fired by the board of directors and since then it has been one twist or another in what is turning to be quite a saga. Here is everything you need to know about the drama unfolding at OpenAI <br>
+                    <div style=" width: 500px; height: 230px;">
+                        <img src="https://www.teslarati.com/wp-content/uploads/2022/11/elon-musk-ted.jpg" alt="" width="500px" height="230px">
+                    </div>
+                </div>
+
+                <div style="width: 450px; height: 200px; float: left; text-align: justify; margin: 10px;">
+                    <h3>It was a fine weekend for the tech world until news of Sam Altman being ousted from OpenAI started doing rounds.</h3> Soon, the internet was full of reports of the former CEO's exit from the AI company, and the OpenAI board said in a statement that it no longer has faith in Altman's 
+                    capabilities to lead the company. This came as a complete surprise and nothing of the sorts was anticipated. A report in Bloomberg said that the news of Sam's exit was a complete surprise for him as well.
+                    Elon Musk’s social media company X filed a lawsuit against liberal advocacy group Media Matters for America on Monday, saying it manufactured a report to show advertisers’ posts alongside neo-Nazi and white nationalist posts in order to “drive advertisers from the platform and destroy X Corp.”
+
+Media Matters, a Washington, D.C.-based non-profit, called the lawsuit “frivolous.” Advertisers have been fleeing the site formerly known as Twitter over concerns about their ads showing up next to pro-Nazi content —
+ 
+ IBM, NBCUniversal and its parent company Comcast said last week that they stopped advertising on X after the Media Matters report said their ads were appearing alongside material praising Nazis. It was a fresh setback as the platform tries to win back big brands and their ad dollars, X’s main source of revenue.
+                </div>
+            </div>
+        </div>
+    </aside>
+    <main class="a">
+        <div><img class="photo" src="https://img.etimg.com/thumb/msid-105238688,width-650,height-488,imgsize-732588,,resizemode-75/n-r-narayana-murthy.jpg" alt=""></div>
+    </main>
+    <section class="sec1 a">
+        <div style=" position: relative; top: -50px; left: -15px; text-align: justify;"><h2>The NEP lays emphasis on multilingualism and promotion of Indian languages, learning in mother tongue or the local language till at least 5th standard.</h2>
+             Free and compulsory education is guaranteed from pre-school to high school.
+              Currently By 2035, the percentage of students who get higher education will be 26.3 percent.
+               The NEP has set a target of raising it to 50.
+                In this regard, the BJP government has already constituted 32 committees to formulate the new curriculum.
+                 Education Minister Madhu Ba .</div>
+
+                 <div style=" position: relative; top: -10px; left: -15px; text-align: justify;">The NEP lays emphasis on multilingualism and promotion of Indian languages, learning in mother tongue or the local language till at least 5th standard.
+                    Free and compulsory education is guaranteed from pre-school to high school.
+                     Currently By 2035, the percentage of students who get higher education will be 26.3 percent.
+                      The NEP has set a target of raising it to 50.
+                       In this regard, the BJP government has already constituted 32 committees to formulate the new curriculum.
+                        Education Minister Madhu Ba .</div>
+    </section>
+    <section class="sec2" ><h3>PM Modi's Pep Talk In India Dressing Room After World Cup Final Loss</h3>
+        <img src="https://pbs.twimg.com/media/F_Yp2RYWEAAAegn?format=jpg&name=small" alt="" height="200px" width="400px">
+    </section>
+    <aside class="aside2"></aside>
+    <nav class="nav2 a">
+        <div style=" width: 400px; height: 600px;float: left;">
+            <div style=" width: 380px; height: 280px; margin-bottom: 10px;text-align: justify;">
+                <h2>Govt may introduce law against deepfakes, misinformation: MoS</h2>
+                Although the internet & AI are empowering, they are being used to “cause harm, to cause chaos in society…" the minister said.
+                    The government may consider introducing a new law to deal with deepfakes and misinformation, Union minister of state electronics and technology Rajeev Chandrasekhar, said on Tuesday. Separately, the IT ministry has called two meetings with executives of social media firms, on Thursday and Friday.
+            
+            </div>
+            <div style=" width: 380px; height: 280px;">
+                <img src="https://www.hindustantimes.com/ht-img/img/2023/11/21/550x309/Deepfakes-are--a-very-important--clear-and-present_1700594191132.jpg" alt="" width="380px" height="280px">
+            </div>
+
+            <div style=" width: 1380px; height: 100px; margin-top: 10px; text-align: justify;">
+                The meeting on Thursday, to be held in Rail Bhawan, will focus on the issue of manipulated images and videos. The meeting on Friday, 
+                called by Chandrasekhar, will focus on general compliance with IT rules.
+                “We have already worked very hard and created the IT Rules in April 2023. We will continue to create a framework, including but not limited to, if necessary, a new legislation to ensure that deepfakes or misinformation at large do not pose a threat...
+                 to the safety and trust of 1.2 billion Indians who will be on the Indian internet,” he told ANI news agency.
+            </div>
+        </div>
+        <div style=" width: 400px; height: 590px;float: left;">
+            <div style=" width: 200px; height: 400px;float: left;">
+                <img width="200px" height="400px" src="https://images.news18.com/ibnlive/uploads/2023/10/stubble-burning-2023-10-d8366659e5ee2b292403f2f4f080b9fa-3x2.jpg?impolicy=website&width=510&height=356" alt="">
+            </div>
+
+            <div style=" width: 200px; height: 200px;text-align: justify; float: left; font-size: 20px; font-weight: bold; text-align: justify;">
+                'Why Are Farmers Being Made Villain?’: SC Raps Punjab Govt Over Stubble Burning, Says Take Cue From Haryana
+            </div>
+            
+
+            The Supreme Court on Tuesday rapped the Punjab government for not taking strict actions against stubble burning, one of the biggest causes of air pollution in Delhi-NCR, and observed that farmers are presented as villains while not getting adequate chances to be heard in court.
+
+The apex court made the observations while hearing a series of petitions on the toxic air across Delhi that has created a chokehold-like situation for the residents of the national capital.
+The Supreme Court on Tuesday rapped the Punjab government for not taking strict actions against stubble burning, one of the biggest causes of air pollution in Delhi-NCR, and observed that farmers are presented as villains while not getting adequate chances to be heard in cour has created a chokehold-like situation for the residents of the national capital.
+            
+            
+        </div>
+
+        <div style=" width: 200px; height: 600px;float: left; margin-left: 5px;text-align: justify;">
+            According to HT, a bench of Justices SK Kaul and S Dhulia directed the Punjab and Delhi governments to take action against the burning of agricultural waste, which added significantly to Delhi’s AQI crisis.
+
+The bench also stated the AAP-led Punjab government’s report suggested that over 8,400 meetings were held with farmers and farmer leaders to convince them to not burn paddy straws by state house officers but still the number of farm fires could not be abated, the publication reported.
+The court also questioned Bhagwant Mann’s government about why the process of crop residue..The Supreme Court on Tuesday rapped the Punjab government for not taking strict actions against stubble burning, one of the biggest causes of air pollution in Delhi-NCR, and observed that farmers are presented as villains while not getting adequate chances to be heard in court.            
+        </div>
+
+        <div style=" width: 400px; height: 600px; float: left; margin-left: 5px; margin-top: -10px; text-align: justify;">
+            India Prime Minister Narendra Modi visited the Indian cricket team’s dressing room after the heartbreaking defeat to Australia in the final of 2023 ODI World Cup. PM Modi was present at the stadium which has been named after him in Ahmedabad to support the Indian team in the mega clash but Australia outclassed the hosts in all three departments to register a 6-wicket win in the all-important clash.
+
+The Indian players were dejected after the heartbreaking defeat as Mohammed Siraj even shed a tear on the pitch itself.
+
+PM Modi and Home Minister Amit Shah visited the Indian players in the dressing room
+ and consoled them. A photo of PM Narendra Modi holding Virat Kohli and Rohit Sharma’s hands went viral on social media.
+
+            <img src="https://pbs.twimg.com/media/F_XMlj6XYAAs8m_?format=jpg&name=small" alt="" height="300px" width="350px">
+        </div>
+
+    </nav>
+    <footer class="a" style="margin-top: 60px;height: 400px; float: left;"></footer>
+
+        <!-- <div style="background-color: peru; width: 600px; height: 400px;">
+            <div style="background-color: yellowgreen; width: 400px; height: 400px; ">
+                <img style="position: relative; top: -600px;" width="400px" height="300px" src="https://images.cnbctv18.com/wp-content/uploads/2022/05/Tata-Motors.jpg?impolicy=website&width=590&height=264" alt="">
+                
+            </div>
+            <div style="background-color: green; width: 200px; height: 400px; "></div>
+        </div>
+         -->
+    <!-- </nav>
+    <footer class="a" style="margin-top: 60px;height: 400px; float: left;"> -->
+        <!-- <div style=" width: 300px; height: 300px;float: left;">
+            <img src="/MEDIA/IMAGES/IMG_20231122_115633.jpg" alt="" width="300px" height="400px">
+        </div>
+        <div style=" width: 300px; height: 400px;float: left;">
+            <span style="font-size: 30px; color: deepskyblue;">&nbsp;MISSING</span> <br><br>
+            <span style="font-size: 20px;">&nbsp;Name :Yarlagadda Vinitha</span><br><br>
+            <span style="font-size: 20px;">&nbsp;Age :21(No Boyfriend)</span><br><br>
+            <span style="font-size: 20px;">&nbsp;address :Vijaya Lakshmi Ladies hsl ,chaithanyapuri HYD</span><br><br>
+            <span style="font-size: 30px; color: deepskyblue;">&nbsp;CONTACT DETAILS</span><br><br>
+            <span style="font-size: 15px;">&nbsp;Friend Name1 : G Dharani (8328602360)</span><br>
+            <span style="font-size: 15px;">&nbsp;Friend Name2 : R Lavanya (9391342403)</span><br>
+            <span style="font-size: 15px;">&nbsp;Friend Name3 : N Pavani (7702581411)</span><br>
+
+        </div>
+
+        <div style=" width: 800px; height: 400px; float: left;">
+            <p style="font-size: 20px;">She is Vinitha Yarladadda.From Past 3 Days She is mentally not stable , in these days we supported her
+            to come out of depression due to not getting job.Today morning before we wakeup she is not on her bed.
+        We searched nearby places and also in Institute After taking of our breakfast but we found no clue about her.
+    There are no traces of her even in CC TV FOOTAGE also.  </p>
+
+    <span style="color: maroon; font-size: 30px;">
+        MOST PROBABLE PLACES THAT YOU FIND HER...................    
+    </span>
+
+
+    <ol>
+        <li>Near Pani puri stalls</li>
+        <li>Near Bakerys</li>
+        <li>Near shopping malls</li>
+        <li>Near Restaurents</li>
+        <li>Near Beauty Parlour</li>
+    </ol>
+
+    <span style="font-size: 20px;color: blue;">NOTE : </span>She took all our Money , Laptops and Mobile Phones.If you can't find her there is no problem But please Find our belongings.
+    <br>🙏🏻🙏🏻🙏🏻🙏🏻🙏🏻🙏🏻🙏🏻
+    <br>
+        </div> -->
+
+
+
+    </footer>
 </body>
 </html>
