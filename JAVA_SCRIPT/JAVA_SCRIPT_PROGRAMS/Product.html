@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        // PRODUCT OF THE NUMBERS
+        function demo1(...rest)
+        {
+            let prod=1
+            for (i=0;i<=rest.length-1;i++)
+            {
+                prod*=rest[i]
+            }
+            console.log(prod)
+        }
+        demo1(10,20,30,40)
+
+        function demo2(...rest)
+        {
+            for(i=0;i<=rest.length-1;i++)
+            {
+                if(rest[i]%2==0)
+                {
+                    console.log("even")
+                }
+                else{
+                    console.log("odd")
+                }
+            }
+        }
+        demo2(10,20,40,23,25,27)
+
+
+        function demo3(...rest)
+        {
+            for(i=0;i<=rest.length-1;i++)
+            {
+                if(rest[i]%2==0)
+                {
+                even=rest[i] 
+                console.log(even)
+                } 
+                else{
+                    odd=rest[i]
+                    console.log("odd")
+                }
+            }
+        }
+        demo3(10,30,25,39)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

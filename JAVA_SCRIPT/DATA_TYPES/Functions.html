@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // FUNCTION WITH NAME
+
+        function demo()
+        {
+            let a1=20;
+            let b=30;
+            let result=a1+b;
+            console.log(result)
+        }
+        demo()
+
+        // FUNCTION WITH ARGUMENTS
+
+        function demo1(num1,num2)
+        {
+            let sum=num1+num2;
+            console.log(sum)
+        }
+        demo1(20,)
+
+        function demo2(num1,num2)
+        {
+            let sum=num1+num2;
+            console.log(sum)
+        }
+        demo1(20,"abc")
+
+        function demo2(num3,num4)
+        {
+            let sum1=num3+num4;
+            console.log(sum1)
+        }
+        demo2(20,100)
+
+
+        // FUNCTION WITH RETURN TYPE
+
+        function demo3()
+        {
+            console.log("Welcome to return type")
+            let a=20;
+            // console.log(a);
+            return a;
+        }
+        let a=demo3()
+        console.log("return value is :"+a);
+        console.log(`return value is : ${a}`);
+
+
+        function demo3()
+        {
+            console.log("Welcome to return type")
+            let b=[10,20,30];
+            // console.log(a);
+            return b;
+        }
+        let b=demo3()
+        console.log("return value is :"+b);
+        console.log(`return value is : ${b}`);
+
+
+        // FUNCTION WITH ARG AND RETURN KEYWORD
+
+        function areaofcircle(radius)
+        {
+            const PI=3.14;
+            let areaofcircle=PI*radius*radius;
+            console.log(`The area of circle is :${areaofcircle}`)
+            return areaofcircle
+        }
+        let c=areaofcircle(5);
+        console.log(c)
+
+        // AREA OF RECTANGLE
+
+        function areaofrect(length,breadth)
+        {
+            let areaofrect=length*breadth;
+            console.log("The area of rectangle is :"+areaofrect)
+            return areaofrect;
+        }
+        let d=areaofrect(c,10);
+        console.log(d)
+
+        // AREA OF TRIANGLE
+
+        function areaoftri(base,height)
+        {
+            let areaoftri=0.5*base*height
+            console.log(`The area of Triangle is :${areaoftri}`)
+        }
+        let t=areaoftri(c,d)
+
+        console.log(typeof c)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

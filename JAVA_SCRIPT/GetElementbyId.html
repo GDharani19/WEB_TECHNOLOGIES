@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inp1">
+    <br>
+    <small id="small"></small>
+    <br>
+    <input type="text" id="abc">
+    <br>
+    <small id="small1"></small>
+    <br>
+    <button onclick="demo()">SUBMIT</button>
+
+    <script>
+        function demo()
+        {
+            let b=document.getElementById("inp1").value;
+            console.log(b)
+
+            let b1=document.getElementById("abc").value;
+            console.log(b1)
+
+            document.getElementById("small").innerHTML=`User name is : ${b}`
+            document.getElementById("small1").innerHTML=`User name is : ${b1}`
+
+        }
+    </script>
+
+</body>
+</html>

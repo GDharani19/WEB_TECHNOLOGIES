@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let name1="dinga"
+        console.log(name1)
+        console.log(typeof name1)
+
+        let l=name1.length;
+        console.log(l);
+
+        let name2='DINGA'
+        console.log(name2)
+        console.log(typeof name2)
+
+        let l1=name2.length;
+        console.log(l1);
+
+        let name3=`dinga`
+        console.log(name3)
+        console.log(typeof name3)
+
+        let l2=name3.length;
+        console.log(l2);
+
+        // STRING METHODS
+
+        let upper=name1.toUpperCase()
+        console.log(upper)
+
+        let low=name2.toLowerCase()
+        console.log(low)
+
+        let char=name1.charAt(2);
+        console.log(char);
+
+        let subname="I like Javascript , I like CSS , I like HTML "
+        console.log(subname.concat(" Reactjs"));
+
+        console.log(subname.split(""));
+        console.log(subname.split(" "));
+        console.log(subname.split("  "));
+
+        console.log(subname.replace("like","love"));
+        console.log(subname.replaceAll("like","love"));
+
+        // STRING IMPORTANT METHODS
+
+        let name4=" WEBTECHNOLOGIES ";
+        console.log(name4)
+        console.log(name4.length)
+        console.log(typeof name4)
+
+        // TRIM METHOD
+        console.log(name4.trim())
+        console.log(name4.trimStart())
+        console.log(name4.trimLeft())
+        console.log(name4.trimEnd())
+        console.log(name4.trimRight())
+
+        // SLICE METHOD
+        let subname1="Java Script";
+        console.log(subname1.slice(-6,4));
+        console.log(subname1.slice(0,4));
+        console.log(subname1.slice(-11,-1));
+        console.log(subname1.slice(-11,));
+        console.log(subname1.slice(-1,1));
+        console.log(subname1.slice(4,9));
+        console.log(subname1.slice(3,));
+        
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

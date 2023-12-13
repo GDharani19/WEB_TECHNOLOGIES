@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Normal Anonymous function with variable declaration
+
+        // function()
+        // {
+        //     console.log("Welcome to anonymous function")
+        // }
+
+        let a=function()
+        {
+            console.log("Welcome to anonymous function")
+        }
+        // console.log(a)
+        a()
+
+        // Anonymous function with argument
+
+        let b=function(num1)
+        {
+            console.log(num1) 
+        }
+        // console.log(b)
+        b(20)
+
+
+        // Anonymous function with return type
+
+        let c=function()
+        {
+            console.log("anonymous function with return type")
+            return "return type"
+        }
+        let d=c()
+        console.log(`The return type value is :${d}`)
+
+        // Anonymous function with argument and return type
+
+        // Area of circle
+        let area1=function(radius)
+        {
+            const PI=3.14;
+            areaofcircle=PI*radius*radius;
+            console.log(`The area of the circle is :${areaofcircle}`)
+            return areaofcircle
+        }
+        let area=area1(5)
+        console.log(`The return value is :${area}`)
+
+        // Area of Triangle
+
+        let area2=function(base,height)
+        {
+            areaoftri=0.5*base*height;
+            console.log(`The area of the triangle is :${areaoftri}`)
+            return areaoftri
+        }
+        let ret=area2(area,3)
+        console.log(`The return value is :${ret}`)
+
+
+        // Anonymous function with rest parameter
+
+        let rest1=function(...rest)
+        {
+            for(i=0;i<=rest.length-1;i++)
+            {
+                if (rest[i]%2==0)
+                {
+                    console.log("even")
+                }
+                else
+                {
+                    console.log("odd")
+                }
+            }
+        }
+        rest1(12,34,54,33,23)
+
+        // anonymous function with rest parameter to rest parameter numbers is even or odd ,If it is even do even summation
+        // if it is odd do odd sum and write program for palindrome if it is odd 
+
+
+        let evensum=0
+        let oddsum=0
+        let palin=function(...rest)
+        {
+            console.log(rest)
+
+            for (i=0;i<=rest.length-1;i++)
+            {
+                if(rest[i]%2==0)
+                {
+                    evensum+=rest[i]
+                }
+                else{
+                    oddsum+=rest[i]
+                }
+            }
+        }
+        palin(45,87,95,8,5,24,44,55)
+        console.log(`The sum of even numbers is:${evensum}`)
+        console.log(`The sum of odd numbers is:${oddsum}`)
+        let oddsum1=oddsum
+        let rev=0;
+        while(oddsum>0)
+        {
+            let d=oddsum%10
+            rev=rev*10+d;
+            oddsum=parseInt(oddsum/10)
+        }
+        if (rev==oddsum1)
+        {
+            console.log("Odd sum is palindrome")
+        }
+        else{
+            console.log("Odd sum is not a palindrome")
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

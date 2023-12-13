@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 600px;
+        }
+
+        input{
+            width: 60px;
+            height: 60px;
+            border-radius: 5px;
+            background-color: rgb(240, 94, 196);
+            font-size: 15px;
+            /* filter: drop-shadow(2px 2px ); */
+            border: none;
+            /* z-index: 2; */
+            opacity:0.8;
+        }
+
+        input:hover{
+            background-color: chartreuse;
+            scale: 10px;
+            cursor: pointer;
+            scale: 1.04;
+            border-radius: 40%;
+            box-shadow:2px 2px 8px deeppink, -2px 2px 8px blue, 2px -2px 8px yellow, -2px -2px 8px deepskyblue ;
+            background-image: url(https://i.pinimg.com/originals/32/84/93/328493509edd6499da6cc4a2b524954f.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #equal{
+            height: 200px;
+        }
+
+        #equal:hover{
+            border-radius: 10px;
+            box-shadow:2px 2px 8px deeppink, -2px 2px 8px blue, 2px -2px 8px yellow, -2px -2px 8px deepskyblue ;
+            background-image: url(https://i.pinimg.com/originals/32/84/93/328493509edd6499da6cc4a2b524954f.gif);
+            background-repeat: no-repeat;
+            background-size: 60px 200px;
+        }
+
+        #inp1{
+            width: 300px;
+            text-align: right;
+            cursor: pointer;
+            color: deeppink;
+            font-size: 20PX;
+        }
+
+        #inp1:hover{
+            scale: 0;
+        }
+
+        ::placeholder{
+            font-size: 20px;
+            color: black;
+            position: relative;
+            left: -10px;
+            top: 3px;
+            /* color: deeppink; */
+        }
+
+        table{
+            border-radius: 10px;
+            /* background-image: url(https://slp-statics.astockcdn.net/static_assets/staging/24winter/home/curated-collections/card-2.jpg?width=580); */
+            /* background-image: url(https://media.tenor.com/2e07K2Z7CjEAAAAi/heart-love.gif); */
+            /* background-image: url(https://media.tenor.com/3dYH1mSELCcAAAAM/hearts-tinyheartsas1.gif); */
+            /* background-image: url(https://media.giphy.com/media/LpDmM2wSt6Hm5fKJVa/giphy.gif); */
+            /* background-image: url(https://i.pinimg.com/originals/3a/ab/a4/3aaba43976e6fc7f887f813ea5fa0f93.gif); */
+            background-image: url(https://media4.giphy.com/media/xM2TS2rdTYlIhUhB4l/giphy.gif);
+            background-repeat: no-repeat;
+            background-size:350px 490px;
+            z-index: 1;
+            border: solid 10px pink;
+        }
+
+        table:hover{
+            /* background-image: url(https://media.tenor.com/2e07K2Z7CjEAAAAi/heart-love.gif); */
+            background-repeat: no-repeat;
+        }
+
+        td{
+            border: none;
+        }
+
+
+        
+    </style>
+
+    <script>
+        function number1(num)
+        {
+            // console.log(num)
+            document.getElementById("inp1").value+=num;
+        }
+
+        function cal1()
+        {
+            let a=document.getElementById("inp1").value;
+            console.log(a)
+            let b=eval(a)
+            console.log(b)
+            document.getElementById("inp1").value=b;
+        }
+
+        function cleardata()
+        {
+            // let a=document.getElementById("inp1").value;
+            // console.log(typeof a)
+            document.getElementById("inp1").value=""
+        }
+
+        function delete1()
+        {
+            let a=document.getElementById("inp1")
+            a.value=a.value.slice(0,-1)
+        }
+    </script>
+
+
+</head>
+<body>
+    <table cellpadding="10"   >
+        <tr>
+            <td colspan="4"><input type="text" id="inp1" placeholder="CALCULATOR  0"></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" value="*"    onclick="number1('*')"></td>
+            <td><input type="button" value="/"    onclick="number1('/')"></td>
+            <td><input type="button" value="del"  onclick="delete1()"></td>
+            <td><input type="button" value="AC"   onclick="cleardata()"></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" value="9"  onclick="number1('9')"></td>
+            <td><input type="button" value="8"  onclick="number1('8')"></td>
+            <td><input type="button" value="7"  onclick="number1('7')"></td>
+            <td rowspan="3"><input type="button" value="=" name="" id="equal" onclick="cal1()"></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" value="6"  onclick="number1('6')"></td>
+            <td><input type="button" value="5"  onclick="number1('5')"></td>
+            <td><input type="button" value="4"  onclick="number1('4')"></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" value="3"  onclick="number1('3')"></td>
+            <td><input type="button" value="2"  onclick="number1('2')"></td>
+            <td><input type="button" value="1"  onclick="number1('1')"></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" value="0"  onclick="number1('0')"></td>
+            <td><input type="button" value="."  onclick="number1('.')"></td>
+            <td><input type="button" value="+"  onclick="number1('+')"></td>
+            <td><input type="button" value="-"  onclick="number1('-')"></td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Factorial program with function recursion
+
+        // function factorial(num)
+        // {
+        //     if (num==0)
+        //     {
+        //         return 1;
+        //     }
+        //     else
+        //     {
+        //         return num*factorial(num-1);
+        //     }
+        // }
+        // let res=factorial(0)
+        // console.log(`The factorial of the given number is : ${res}`)
+
+
+        // Fibinocci series
+
+        // function fibinocci(n)
+        // {
+        //     if(n===0)
+        //     {
+        //         return 0;
+        //     }
+        //     else if(n===1)
+        //     {
+        //         return 1;
+        //     }
+        //     else
+        //     {
+        //         return fibinocci(n-1)+fibinocci(n-2);
+        //     }
+        // }
+        // let b=fibinocci(11)
+        // console.log(b)
+
+
+    // function fibonacciIterative(n)
+    // {
+    //     if (n <= 1)
+    //      {
+    //     return n;
+    //     }
+
+    //     let fibPrev = 0;
+    //     let fibCurrent = 1;
+
+    //     for (let i = 2; i <= n; i++)
+    //      {
+    //         const temp = fibCurrent;
+    //         fibCurrent = fibPrev + fibCurrent;
+    //         fibPrev = temp;
+    //     }
+
+    //     return fibCurrent;
+    //     }
+
+    //     // Generate and print Fibonacci sequence up to the 10th term
+    //     console.log("Fibonacci sequence up to 10 terms:");
+    //     for (i = 0; i < 45; i++) {
+    //     console.log(fibonacciIterative(i));
+    //     }
+
+        // function sumofdigits(number)
+        // {
+        //     if (number===0)
+        //     {
+        //         return 0;
+        //     }
+        //     else
+        //     {
+        //         return number%10+sumofdigits(parseInt(number/10));
+        //     }
+        // }
+
+        // function prodofdigits(number)
+        // {
+        //     if (number===0)
+        //     {
+        //         return 1;
+        //     }
+        //     else
+        //     {
+        //         return (number%10)*prodofdigits(parseInt(number/10))
+        //     }
+        // }
+
+        // if (sumofdigits==prodofdigits)
+        // {
+        //     console.log("The given number is a spy number")
+        // }
+        // else
+        // {
+        //     console.log("Not a spy number")
+        // }
+
+        // let value=33;
+
+
+        // Recursive function to calculate the sum of digits of a number
+function sumOfDigits(number) {
+  if (number === 0) {
+    return 0;
+  } else {
+    return number % 10 + sumOfDigits(parseInt(number / 10));
+  }
+}
+
+// Example usage
+let res=sumOfDigits(123456);
+console.log(`Sum of digits of the digits is : ${res}`);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
