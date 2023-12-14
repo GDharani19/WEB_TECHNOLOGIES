@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading"></h1>
+    
+    <script>
+        let date=new Date()
+        console.log(date)
+
+        let day=date.getDay()
+        console.log(day)
+
+        // Day by using switch condition
+
+        switch(day)
+        {
+            case 0:console.log("Sunday");
+            break;
+            case 1:console.log("Monday");
+            break;
+            case 2:console.log("Tueday");
+            break;
+            case 3:console.log("Wedday");
+            break;
+            case 4:console.log("Thursday");
+            break;
+            case 5:console.log("Friday");
+            break;
+            case 6:console.log("Satday");
+        }
+
+        let arrday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+        console.log(arrday[day])
+
+        // For month by using month method
+
+        let month=date.getMonth()
+        console.log(month)
+
+        // Month by using switch condition
+
+        switch (month)
+        {
+            case 0:console.log("January");
+            break;
+            case 1:console.log("February")
+            break;
+            case 2:console.log("March");
+            break;
+            case 3:console.log("April")
+            break;
+            case 4:console.log("May");
+            break;
+            case 5:console.log("June")
+            break;
+            case 6:console.log("July");
+            break;
+            case 7:console.log("August")
+            break;
+            case 8:console.log("September");
+            break;
+            case 9:console.log("October")
+            break;
+            case 10:console.log("November");
+            break;
+            case 11:console.log("December")
+        }
+
+
+        let arrmonth=["January","February","March","April","May","June","July","August","September","October","November","December"]
+        console.log(arrmonth[month])
+
+        // Date by using date method
+
+        let date1=date.getDate()
+        console.log(date1)
+
+        // Date by using Switch Condition
+
+        switch(date)
+        {
+            case 0:console.log(1);
+            break;
+            case 1:console.log(2);
+            break;
+            case 2:console.log(3);
+            break;
+            case 3:console.log(4);
+            break;
+            case 4:console.log(5);
+            break;
+            case 0:console.log(1);
+            break;
+            case 0:console.log(1);
+            break;
+            case 0:console.log(1);
+            break;
+            case 0:console.log(1);
+            break;
+            case 0:console.log(1);
+            break;
+            case 0:console.log(1);
+            break;
+            case 0:console.log(1);
+            break;
+            case 0:console.log(1);
+            break;
+
+        }
+
+        // Hours
+
+        let hours=date.getHours()
+        console.log(`Now the present hour is :${hours}`)
+
+        let min=date.getMinutes()
+        console.log(`Now the present min is :${min}`)
+
+        let sec=date.getSeconds()
+        console.log(`Now the present sec is :${sec}`)
+
+        console.log("")
+
+
+        let hour=date.getHours()
+        // {
+        //     if (hour>12)
+        //     {
+        //         hour=hour-12;
+        //     }
+        //     if (hour<10)
+        //     {
+        //         hour="0"+hour;
+        //     }
+        // }
+        let hour1=(hour>12)?(hour-12):hour;
+        let hour2=(hour1<10)?("0"+hour1):hour1;
+        console.log(`Now the present hour is :${hour2}`)
+
+
+        // Minutes
+
+        let mins=date.getMinutes()
+        
+        let mins1=(mins<10)?("0"+mins):mins;
+        console.log(`Now the present min is :${mins1}`)
+
+
+        // Seconds
+
+        let seconds=date.getSeconds()
+
+        let seconds1=(seconds<10)?("0"+seconds):seconds;
+        console.log(`Now the present seconds is :${seconds1}`)
+
+
+
+        function time1()
+        {
+            let date=new Date();
+            let hour=date.getHours();
+            let hour1=(hours>12)?(hour-12):hour;
+            let hour2=(hours1<10)?("0"+hour1):hour1;
+            // console.log(hours2)
+
+            let mins=date.getMinutes()
+            let mins1=(minutes<10)?("0"+minutes):minutes;
+            // console.log(minutes1)
+
+            let seconds=date.getSeconds()
+            let seconds1=(seconds<10)?("0"+seconds):seconds;
+            // console.log(seconds1)
+        
+
+        document.getElementById("heading").innerHTML=`${hour2}:${mins1}:${seconds1}`
+        setTimeout(() => {
+            time1()
+        }, 1000);
+
+    }
+        
+
+    </script>
+</body>
+</html>
