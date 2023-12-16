@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: rgba(128, 247, 8, 0.648);
+        }
+
+        button{
+            padding: 20px 30px;
+            border-radius: 20px;
+            background-color: lightgreen;
+            font-size: 10px;
+            font-weight: bold;
+        }
+
+        button:hover{
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>WELCOME TO HEXA-DECIMAL COLOUR CODE SYSTEM</h1>
+
+    <h1 id=""abc></h1>
+
+    <button onclick="colorcode()"COLOR CODE GENERATION>Click Here To Change Color</button>
+
+    <script>
+        function colorcode()
+        {
+            let color="#";
+            let arrcolor=['A','B','C','D','E','F',0,1,2,3,4,5,6,6,7,8,9,'a','b','c','d','e','f']
+            console.log(arrcolor.length)
+
+            for(i=0;i<6;i++)
+            {
+                let a=Math.floor(Math.random()*22)
+                console.log(a)
+                let b=arrcolor[a]
+                console.log(b)
+                color+=b
+            }
+
+            console.log(color)
+
+            // document.getElementById
+            // color given to body we have shortcut style attribute with bgc color property assign value
+
+            document.body.style.backgroundColor=color
+            // to see color code empty code
+            document.getElementById("abc").innerHTML=color
+        }
+    </script>
+</body>
+</html>

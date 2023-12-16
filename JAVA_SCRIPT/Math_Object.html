@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inp1">
+
+    <input type="button" value="" onclick="square()">
+    <input type="text" value="" onclick="cuberoot()">
+    <input type="text" value="" onclick="squareroot()">
+
+    <input type="button" value="exp" onclick="exp1()">
+
+    <input type="text" value="ln" onclick="ln1()">
+    <input type="text" value="log" onclick="log1()">
+
+    <input type="text" value="%" onclick="per()">
+
+    <input type="text" value="cos1" onclick="cos1()">
+    <input type="text" value="sin1" onclick="sin1()">
+    <input type="text" value="tan1" onclick="tan1()">
+
+    <script>
+        // let a=document.getElementById("inp1").value;
+
+        let b=document.getElementById("inp1")
+        function square()
+        {
+            let a=document.getElementById("inp1").value;
+            b.value=Math.sqrt(a)
+        }
+
+        
+    </script>
+</body>
+</html>

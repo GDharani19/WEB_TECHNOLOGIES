@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="inp1" placeholder="Enter Name">
+    <br>
+    <small id="s1"></small>
+    <br>
+    <br>
+
+    <input type="text" name="" id="inp2" placeholder="Enter Phone No">
+    <br>
+    <small id="s2"></small>
+    <br>
+    <br>
+
+    <button onclick="abc()">SUBMIT</button>
+
+    <script>
+        function abc()
+        {
+            // Name condition
+
+            let name=document.getElementById("inp1").value;
+            // console.log(name)
+
+            let regExp = /^[a-zA-Z]{3,15}$/
+
+            // check the conditions by using 2 in regular expressions methods
+            // 1.test().........regExp.(test(userdata))
+            // 2.match().........userdata.match(regExp)
+
+            if (regExp.test(name))
+            {
+                let a=document.getElementById("s1").innerHTML=`User data is valid`
+                document.getElementById("s1").style.color='green'
+                // console.log(a)
+            }
+            else{
+                let a=document.getElementById("s1").innerHTML=`User data is Invalid`
+                document.getElementById("s1").style.color='red'
+                // console.log(a)
+            }
+
+            // phone
+
+            let phone=document.getElementById("inp2").value;
+            // console.log(phone)
+
+            let regExp1 = /^[6-9]{1},[0-9]{9}$/
+
+            if(phone.match((regExp1)))
+            {
+                let b=document.getElementById("s2").innerHTML="User data is valid"
+                document.getElementById("s2").style.color="green"
+                // console.log(b)
+            }
+            else{
+                let b=document.getElementById("s2").innerHTML="User data is invalid"
+                document.getElementById("s2").style.color="red"
+                // console.log(b)
+            }
+        }
+    </script>
+</body>
+</html>
