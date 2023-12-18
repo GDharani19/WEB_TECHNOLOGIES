@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific calculator</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        table{
+            background-color: green;
+            background-image: url(https://cdn.pixabay.com/photo/2018/07/05/16/59/students-3518726_1280.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 10px;
+            box-shadow: 3px 3px 8px gray,-3px 3px 8px gray,3px -3px 8px gray,-3px -3px 8px gray;
+           
+            
+        }
+        td{
+            border: none;
+        }
+       
+        input{
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+            border: none;
+            font-weight: bold;
+            opacity: 80%;
+            box-shadow: -3px 3px 6px maroon;
+
+        }
+        #main{
+            width: 100%;
+            height: 60px;
+            display: flex;
+            justify-content: left;
+            background-color: rgb(160, 220, 244);
+        }
+        #numbers{
+            background-color: lightgreen;
+        }
+        #operators{
+            
+            background-color: lightseagreen;
+        }
+        #clear{
+            background-color: orange;
+        }
+        #trigno{
+            background-color: aquamarine;
+        }
+        #xvalues{
+            background-color: rgb(245, 108, 108);
+        }
+        #logvalue{
+            background-color: aqua;
+        }
+        #pivalue{
+            background-color: aqua;
+
+        }
+        #sqrtvalue{
+            background-color: aqua;
+        }
+        #degree{
+             width: 100%;
+             background-color: rgb(169, 169, 245);
+        }
+        #inverse{
+             background-color:rgb(169, 169, 245) ;
+        }
+        #expression{
+            background-color:rgb(169, 169, 245) ;
+        }
+        #inverse{
+            background-color:rgb(169, 169, 245) ;
+        }
+        #del{
+            background-color: rgb(221, 244, 128);
+        }
+        #answer{
+            background-color: yellow;
+        }
+        #e{
+            background-color: khaki;
+        }
+        #equ{
+          background-color: yellow;
+          width: 100%;
+        }
+
+        ::placeholder{
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <table border="2" cellpadding="15px" >
+        <tr>
+            <td colspan="7"><input type="text" id="main" placeholder="0"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="button" value="Deg" id="degree"></td>
+            <td><input type="button" value="exp" id="expression" onclick="exp()"></td>
+            <td><input type="button" value="(" id="numbers" onclick="open1()"></td>
+            <td><input type="button" value=")" id="numbers" onclick="close1()"></td>
+            <td><input type="button" value="AC" id="clear" onclick="cleardata()"></td>
+            <td><input type="button" value="+" id="operators" onclick="number1('+')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="del" id="del" onclick="deletebton()"></td>
+            <td><input type="button" value="Sin" id="trigno" onclick="sin()"></td>
+            <td><input type="button" value="/" id="operators" onclick="number1('%')"></td>
+            <td><input type="button" value="7" id="numbers" onclick="number1('7')"></td>
+            <td><input type="button" value="8" id="numbers" onclick="number1('8')"></td>
+            <td><input type="button" value="9" id="numbers" onclick="number1('9')"></td>
+            <td><input type="button" value="" id="operators" onclick="number1('')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="log" id="logvalue" onclick="log()"></td>
+            <td><input type="button" value="cos" id="trigno" onclick="cos()"></td>
+            <td><input type="button" value="x^y" id="xvalues" onclick="squarepower()"></td>
+            <td><input type="button" value="4" id="numbers" onclick="number1('4')"></td>
+            <td><input type="button" value="5" id="numbers" onclick="number1('5')"></td>
+            <td><input type="button" value="6" id="numbers" onclick="number1('6')"></td>
+            <td><input type="button" value="-" id="operators" onclick="number1('-')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="%" id="pivalue" onclick="per()"></td>
+            <td><input type="button" value="tan" id="trigno" onclick="tan()"></td>
+            <td><input type="button" value="In" id="xvalues" onclick="In()"></td>
+            <td><input type="button" value="1" id="numbers"  onclick="number1('1')"></td>
+            <td><input type="button" value="2" id="numbers"  onclick="number1('2')"></td>
+            <td><input type="button" value="3" id="numbers"  onclick="number1('3')"></td>
+            <td><input type="button" value="+" id="operators" onclick="number1('+')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="e" id="e" onclick="e()"></td>
+            <td><input type="button" value="sqrt" id="sqrtvalue" onclick="square()"></td>
+            <td><input type="button" value="cbrt" id="xvalues" onclick="cube()"></td>
+            <td><input type="button" value="0" id="numbers" onclick="number1('0')"></td>
+            <td><input type="button" value="." id="numbers" onclick="number1('.')"></td>
+            
+            <td colspan="2"><input type="button" value="=" id="equ"  onclick="equalto()"></td>
+        </tr>
+    </table>
+
+    <script>
+         function number1(num){
+            document.getElementById('main').value += num;
+        }
+        function equalto(){
+           let a =  document.getElementById('main').value
+           console.log(a)
+           let b = eval(a)
+           console.log(b)
+           document.getElementById('main').value=b;
+        }
+        function cleardata(){
+            // let c = document.getElementById('main').value
+            // console.log(typeof c)
+
+            document.getElementById('main').value=''
+
+        }
+        function deletebton(){
+            let a = document.getElementById('main')
+            a.value = a.value.slice(0,-1)
+        }
+        let num = document.getElementById('main')
+        function square(){
+            let sq = document.getElementById('main').value;
+            num.value = Math.sqrt(sq)
+        }
+        function cube(){
+            let c = document.getElementById('main').value
+            num.value = Math.cbrt(c)
+        }
+        function squarepower(){
+            let sqp = document.getElementById('main').value
+            num.value = Math.pow(sqp,2)
+        }
+        function exp(){
+            let ex = document.getElementById('main').value
+            num.value = Math.exp(ex)
+        }
+        function In(){
+            let i = document.getElementById('main').value
+            num.value = Math.log(i)
+        }
+        function log(){
+            let l = document.getElementById('main').value
+            num.value = Math.log10(l)
+        }
+        function per(){
+            let c = document.getElementById('main').value
+            num.value = a/100
+        }
+        function cos(){
+            let co = document.getElementById('main').value
+            num.value = Math.cos(co*(Math.PI)/180)
+        }
+        function sin(){
+            let co = document.getElementById('main').value
+            num.value = Math.sin(co*(Math.PI)/180)
+        }
+    
+        function tan(){
+            let co = document.getElementById('main').value
+            num.value = Math.tan(co*(Math.PI)/180)
+        }
+       
+ 
+        function e() {
+        let display = document.getElementById("main");
+         display.value += "e";
+        }
+        function open1(){
+            let o = document.getElementById("main");
+             o.value += "(";
+
+        }
+        function close1(){
+            let c = document.getElementById("main");
+             c.value += ")";
+
+        }
+
+
+    </script>
+    
+</body>
+</html>

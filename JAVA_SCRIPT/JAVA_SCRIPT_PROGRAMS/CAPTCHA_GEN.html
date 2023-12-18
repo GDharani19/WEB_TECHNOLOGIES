@@ -1,0 +1,249 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">  
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            /* flex-direction: column;    */
+        }
+        div{
+            background-image: url(https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?q=80&w=1912&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* background-color: indianred; */
+            height: 400px;
+            width: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 30px;
+            border-radius: 20px;
+            position: relative;
+        }
+        input{
+            padding:15px 80px;
+            border-radius: 15px; 
+            font-size: 120%;  
+            text-align: center;
+        }
+        .submit{
+            padding: 15px 30px;
+            font-size: 20px;
+            border-radius: 20px;
+            background-color: rgb(240, 92, 39);
+        }
+        /* i{
+            position: absolute;
+            top: 285px;
+            right: 580px;
+            font-size: 30px;
+            border: 2px solid black;
+            padding: 10px;
+            background-color: white;
+            border-radius: 5px;
+        } */
+        .icon{
+            padding: 10px;
+            font-size: 20px;
+            border-radius: 10px;
+            position: absolute;
+            right: 40px;
+            top: 108px;
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <div>
+        <h1>CAPTCHA CODE</h1>
+        <input type="text" id="inp1">
+        <button class="icon" onclick="result()"><i class="fa-solid fa-arrows-rotate"></i></button>
+        <input type="text" id="inp2">
+        <h3 id="heading"></h3>
+        <button class="submit" onclick="result()">SUBMIT</button>
+    </div>
+    <script>
+        function random1()
+        {
+            let emp=''
+            let arr=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'
+            ,0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F','G','H','I','J','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+            // console.log(arr.length)
+
+            for(i=0;i<7;i++)
+            {
+                let a= Math.floor(Math.random()*arr.length);
+                // console.log(a)
+                let b=arr[a]
+                // console.log(b)
+                emp+=b
+                
+            }
+            console.log(emp)
+            document.getElementById('inp1').value=emp;
+
+            
+        }
+        random1()
+
+        function result()
+        {
+
+            let c=document.getElementById('inp1').value
+            let d=document.getElementById('inp2').value.innerHTML
+
+            // if (inp1!=inp2)
+            // {
+            //     document.getElementById('heading').innerHTML='captcha matched'
+            // }
+            // else if(inp1!=inp2)
+            // {
+            //     document.getElementById('heading').innerHTML='captcha not matched'
+            // }
+            // else{
+            //     document.getElementById('heading').innerHTML=''
+            // }
+            
+            console.log(c)
+            console.log(d)
+        } 
+        
+
+    </script>
+    
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">  
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        div{
+            background-image: url(https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?q=80&w=1912&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 400px;
+            width: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 30px;
+            border-radius: 20px;
+            position: relative;
+        }
+        input{
+            padding:15px 80px;
+            border-radius: 15px; 
+            font-size: 120%;  
+            text-align: center;
+        }
+        .submit{
+            padding: 15px 30px;
+            font-size: 20px;
+            border-radius: 20px;
+            background-color: rgb(243, 96, 43);
+        }
+        
+        .icon{
+            padding: 10px;
+            font-size: 20px;
+            border-radius: 10px;
+            position: absolute;
+            right: 40px;
+            top: 108px;
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <div>
+        <h1>CAPTCHA CODE</h1>
+        <input type="text" id="inp1">
+        <button class="icon" onclick="random1()"><i class="fa-solid fa-arrows-rotate"></i></button>
+        <input type="text" id="inp2">
+        <h3 id="heading"></h3>
+        <button class="submit" onclick="result()">SUBMIT</button>
+    </div>
+    <script>
+        function random1()
+        {
+            let emp=''
+            let arr=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'
+            ,0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F','G','H','I','J','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+            // console.log(arr.length)
+
+            for(i=0;i<7;i++)
+            {
+                let a= Math.floor(Math.random()*arr.length);
+                // console.log(a)
+                let b=arr[a]
+                // console.log(b)
+                emp+=b
+                
+            }
+            console.log(emp)
+            document.getElementById('inp1').value=emp
+
+            
+        
+        function result()
+        {
+            let emp1=''
+            let arr=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'
+            ,0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F','G','H','I','J','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+            // console.log(arr.length)
+
+            for(i=0;i<7;i++)
+            {
+                let a= Math.floor(Math.random()*arr.length);
+                // console.log(a)
+                let b=arr[a]
+                // console.log(b)
+                emp1+=b
+                
+            }
+            console.log(emp1)
+            document.getElementById('inp1').value=emp1
+        }
+
+        console.log(emp)
+        console.log(emp1)
+    }    
+    </script>
+    
+</body>
+</html>
