@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RadioBox</title>
+</head>
+<body>
+    <h1>SELECT YOUR GENDER</h1>
+    <input type="radio" value="Female" name="gen">Female
+    <br>
+    <input type="radio" value="Male" name="gen">Male
+    <br>
+    <input type="radio" value="Others" name="gen">Others
+    <br><br>
+    <button onclick="gender()">Submit</button>
+
+    <p id="p1"></p>
+
+    <script>
+        function gender()
+        {
+            let a=document.getElementsByName("gen")
+            console.log(a)
+            for(i=0;i<=a.length-1;i++)
+            {
+                if(a[i].checked==true)
+                {
+                    let b=a[i].value;
+                    console.log(b)
+                    document.getElementById("p1").innerHTML=`User selected Gender is : ${b}`
+                }
+            }
+        }
+    </script>
+</body>
+</html>

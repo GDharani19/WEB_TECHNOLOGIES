@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input type="text" id="inp1"> -->
+    <h1 class="abc"> WELCOME TO HEADING TAG 1</h1>
+    <h1> WELCOME TO HEADING TAG 2</h1>
+    <h1 class="abc"> WELCOME TO HEADING TAG 3</h1>
+    <h1> WELCOME TO HEADING TAG 4</h1>
+    <h1 class="abc"> WELCOME TO HEADING TAG 5</h1>
+    
+    <button onclick="demo()" >submit</button>
+    <script>
+        // window.document.write("WELCOME TO DOM CONCEPT <br>")
+        // window.document.writeln("<mark><i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WELCOME TO DOM CONCEPT 1 </i></mark>")
+
+        function demo()
+        {
+            // let inp=document.getElementById("inp1")
+            // let b=inp.value;
+            // console.log(inp)
+            // console.log(b)
+
+            // // CLASS NAME METHOD
+
+            // let h=document.getElementsByTagName("h1")
+            // console.log(h)
+            // console.log(typeof h)
+
+            // FOR LOOP
+
+            // for(i=0;i<=h.length-1;i++)
+            // {
+            //     h[i].style.color='green'
+            //     h[i].style.backgroundColor='yellow'
+
+            //     if(i%2==0)
+            //     {
+            //         h[i].style.color='blue'
+            //         h[i].style.backgroundColor='deeppink'
+            //     }
+
+            //     else
+            //     {
+            //         h[i].style.color='maroon'
+            //         h[i].style.backgroundColor='green'
+            //     }
+            // }
+
+            let h=document.getElementsByClassName("abc")
+            console.log(h)
+            console.log(typeof h)
+
+            // for(i=0;i<=h.length-1;i++)
+            // {
+            //     h[i].style.color='green'
+            //     h[i].style.backgroundColor='yellow'  
+
+            //     if(i%2==0)
+            //     {
+            //         h[i].style.color='blue'
+            //         h[i].style.backgroundColor='deeppink'
+            //     }
+
+            //     else
+            //     {
+            //         h[i].style.color='maroon'
+            //         h[i].style.backgroundColor='green'
+            //     }
+            // }
+
+
+            // FOR OFF
+
+            // for (const k1 of h) {
+            //     // console.log(k1)
+            //     k1.style.color="gold"
+            // }
+
+            // FOR IN
+
+            for (const k1 in h) {
+                // console.log(i)
+                if(k1%2==0)
+                {
+                    h[k1].style.color="brown"
+                }
+                else
+                {
+                    h[k1].style.color="deeppink"
+
+                }
+            }
+
+
+        }
+    </script>
+</body>
+</html>

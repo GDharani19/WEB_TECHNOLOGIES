@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+            gap: 20px;
+            background-color: pink;
+        }
+
+        input{
+            padding: 20px 60px;
+            border-radius: 10px;
+            font-size: 15px;
+        }
+
+        button{
+            padding: 10px 25px;
+            border-radius: 10px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" name="" id="inp" placeholder="Enter your Name" oninput="demo()">
+    <button ondblclick="open1()">submit</button>
+
+    <script>
+        function demo()
+        {
+            let a=document.getElementById("inp").value;
+            // console.log(a)
+            let b=a.length;
+            console.log(b)
+
+            if(b%2==0)
+            {
+                document.body.style.backgroundColor="deeppink"
+            }
+            else
+            {
+                document.body.style.backgroundColor="yellow"
+            }
+
+        }
+
+        function open1()
+        {
+            let a=document.getElementById("inp").value;
+            // console.log(a)
+            let b=a.length;
+            console.log(b)
+
+            if(b%2==0)
+            {
+                open("https:/www.instagram.com")
+            }
+            else
+            {
+                open("https:/www.facebook.com")
+            }
+        }
+    </script>
+</body>
+</html>

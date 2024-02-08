@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkBox</title>
+</head>
+<body>
+    <h1>SELECT YOUR SKILLS</h1>
+
+    <input type="checkbox" value="Java" >Java<br><br>
+    <input type="checkbox" value="Python" >Python<br><br>
+    <input type="checkbox" value="ReactJs" >ReactJs<br><br>
+    <input type="checkbox" value="Web-Technology" >Web-Technology<br><br>
+    <input type="checkbox" value="Angular Js" >Angular Js<br><br>
+    <input type="checkbox" value="Node Js" >Node Js<br><br>
+    <input type="checkbox" value="Testing" >Testing<br><br>
+
+    <button onclick="skills()">Submit</button>
+
+    <p id="p1"></p>
+    <p id="p2"></p>
+
+    <script>
+        function skills()
+        {
+           let a=document.getElementsByTagName("input")
+           console.log(a)
+           for(i=0;i<=a.length-1;i++)
+           {
+            if(a[i].checked==true)
+            {
+                let b=a[i].value;
+                console.log(b)
+                document.getElementById("p1").innerHTML=`User selected skills are and applicable only for 1 job : ${b}`
+            }
+
+            else if (a[i].checked>1 && a[i].checked<3)
+            {
+                let c=a[i].value;
+                console.log(c)
+                document.getElementById("p1").innerHTML=`User selected skills are applicable for 2 jobs :${b+c}`
+            }
+            
+        }
+
+        
+        }
+    </script>
+</body>
+</html>
