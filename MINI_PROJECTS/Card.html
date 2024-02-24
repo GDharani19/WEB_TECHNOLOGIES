@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #fdc3c9;
+        }
+
+        .container{
+            position: relative;
+        }
+
+        .valentines{
+            position: relative;
+            top: 50px;
+            cursor: pointer;
+            animation: up 3s linear infinite;
+        }
+
+        .envelope{
+            position: relative;
+            width: 300px;
+            height: 200px;
+            background-color: #02d2c8;
+            border: 2px solid rgb(193, 5, 193);
+        }
+
+        .envelope::before{
+            background-color: deeppink;
+            content: "";
+            position: absolute;
+            width: 212px;
+            height: 212px;transform: rotate(45deg);
+            top: -105px;
+            left: 44px;
+            border-radius: 30px 0 0 0;
+        }
+
+        .card{
+            position: relative;
+            background-color: #ecbae6;
+            width: 270px;
+            height: 170px;
+            bottom: 190px;
+            left: 15px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            box-shadow: -5px -5px 100px  rgba(0,0,0,0.5);
+            animation: cd 3s linear infinite;
+        }
+
+        @keyframes cd{
+            0%{
+                transform: translateY(0);
+            }
+
+            100%{
+                transform: translateY(-100px);
+            }
+        }
+
+        .card:before{
+            content: "";
+            position: absolute;
+            border: 3px solid #a504f6;
+            border-style: dotted;
+            width: 240px;
+            height: 140px;
+            left: 12px;
+            top: 12px;
+            bottom: 0px;
+        }
+
+        .text{
+            position: absolute;
+            font-family: 'Brush Script MT',cursive;
+            font-size: 28px;
+            text-align: center;
+            line-height: 25px;
+            top: 19px;
+            left: 60px;
+            color: #003049;
+        }
+
+        .texts{
+            position: absolute;
+            font-family: 'Brush Script MT',cursive;
+            font-size: 25px;
+            text-align: center;
+            line-height: 25px;
+            top: 70px;
+            left: 90px;
+            color: #590293;
+        }
+
+        .heart{
+            background-color: #d62828;
+            display: inline-block;
+            height: 30px;
+            margin: 0 10px;
+            position: relative;
+            top: 110px;
+            left: 105px;
+            transform: rotate(-45deg);
+            width: 30px;
+        }
+
+        .heart:before,.heart:after{
+            content: "";
+            background-color: #d62828;
+            border-radius: 50%;
+
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="valentines">
+            <div class="envelope"></div>
+            <div class="front"></div>
+            <div class="card">
+                <div class="text">Happy <br>Valentine's Day!</div>
+                <div class="texts">My Love!</div>
+                <div class="heart"></div>
+            </div>
+
+            <div class="hearts"></div>
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+            <div class="four"></div>
+            <div class="five"></div>
+        </div>
+    </div>
+</body>
+</html>
