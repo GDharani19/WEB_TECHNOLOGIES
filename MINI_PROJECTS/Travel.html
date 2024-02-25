@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- <link rel="stylesheet" href="css/travel.css"> -->
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-style: italic;
+            font-family: "kalam",cursive;
+            box-sizing: border-box;
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+
+        html{
+            overflow-x: hidden;
+            font-size: 62.5%;
+        }
+
+        body{
+            background: #333;
+        }
+
+        header{
+            width: 96%;
+            background: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 1.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: .5rem;
+            box-shadow: 0.3rem .5rem rgba(0, 0, 0, .3);
+            padding: 0.3rem 2rem;
+            transition: .2s linear;
+            z-index: 1000;
+            /* font-style: italic; */
+        }
+
+        header .logo{
+            color: #333;
+            font-size: 3rem;
+        }
+
+        header .logo span{
+            color: #0098a1;
+        }
+
+        header .navbar ul{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0;
+            padding: 0;
+        }
+
+        header .navbar ul li{
+            margin: 0 1rem;
+        }
+
+        header .navbar ul li a{
+            font-size: 2rem;
+            color: #333;
+            transition: .2s linear;
+        }
+
+        header .navbar ul li .active{
+            color: #0098a1;
+        }
+
+        header .navbar ul li a:hover{
+            color: #0098a1;
+        }
+
+        header .fa-bars{
+            font-size: 3rem;
+            color: #0098a1;
+            cursor: pointer;
+            display: none;
+        }
+
+        @media (max-width:768px){
+            html{
+                font-size: 55%;
+            }
+
+            header .fa-bars{
+                display: block;
+            }
+
+            header .navbar{
+                position: fixed;
+                top: -100rem;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100%;
+                background-color: #fff;
+                box-shadow: 0.3rem .5rem rgba(0, 0, 0, .3);
+                z-index: 1000;
+                transition: .2s linear;
+                opacity: 0;
+            }
+
+            header .navbar ul{
+                flex-flow: column;
+            }
+
+            header .navbar ul li{
+                margin: 1rem 0;
+                width: 100%;
+                text-align: center;
+            }
+
+            header .navbar ul li a{
+                display: block;
+                font-size: 3rem;
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+
+<header>
+    <a href="#" class="logo">travel  <span>.</span></a>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home" class="active">home</a></li>
+            <li><a href="#feature">feature</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#gallery">gallery</a></li>
+            <li><a href="#review">review</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="fa fa-bars"></div>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script src="js/travels.js"></script>
+</body>
+</html>
