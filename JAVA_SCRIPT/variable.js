@@ -237,7 +237,8 @@
 
 // console.log("Ends")
 
-console.log("Starts");
+console.log("Starts");6
+
 function parent()
 {
     var num=30;
